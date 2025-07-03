@@ -2,11 +2,10 @@
 
 ### Aperçu de l'architecture MCP
 
-Le Model Context Protocol suit une architecture client-hôte-serveur :
+Le Model Context Protocol suit une architecture client-serveur :
 
 Cette séparation des préoccupations permet de créer des systèmes modulaires et composables où chaque serveur peut se concentrer sur un domaine spécifique (comme l'accès aux fichiers, la recherche sur le web, ou les opérations de base de données).
 
-- **Hôtes MCP** : Programmes comme Claude Desktop, les IDE, ou votre application Python qui souhaitent accéder aux données via MCP
 - **Clients MCP** : Clients du protocole qui maintiennent des connexions 1:1 avec les serveurs
 - **Serveurs MCP** : Programmes légers qui exposent chacun des capacités spécifiques via le Model Context Protocol standardisé (outils, ressources, invites)
 - **Sources de données locales** : Fichiers, bases de données et services de votre ordinateur auxquels les serveurs MCP peuvent accéder de manière sécurisée
